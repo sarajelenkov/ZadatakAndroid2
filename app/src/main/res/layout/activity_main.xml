@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="208dp"
+        android:layout_height="42dp"
+        android:background="#FF5722"
+        android:gravity="center"
+        android:text="Dolar"
+        android:textColor="#673AB7"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="333dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="72dp"
+        android:background="#9C27B0"
+        android:gravity="center"
+        android:text="Devizni kalkulator"
+        android:textColor="#FF0000"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="199dp"
+        android:layout_height="39dp"
+        android:background="#FFEB3B"
+        android:gravity="center"
+        android:text="Euro"
+        android:textColor="#E91E63"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193" />
+
+    <TextView
+        android:layout_width="410dp"
+        android:layout_height="34dp"
+        android:background="#2C3BFFBA"
+        android:text="Iznosi u valutama"
+        android:textColor="#1EE9E2"
+        android:textSize="25sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.263" />
+
+    <TextView
+
+        android:layout_width="408dp"
+        android:layout_height="44dp"
+        android:background="#FF583B"
+        android:gravity="center"
+        android:text="Kursevi valuta"
+        android:textColor="#AC1EE9"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+
+    <EditText
+        android:id="@+id/iznosE"
+        android:layout_width="189dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Unesite iznos u eurima"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <EditText
+        android:id="@+id/iznosD"
+        android:layout_width="189dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Unesite iznos u dolarima"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <EditText
+        android:id="@+id/kursE"
+        android:layout_width="192dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Unesite kurs eura"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="426dp" />
+
+    <EditText
+        android:id="@+id/kursD"
+        android:layout_width="186dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Unesite kurs dolara"
+        tools:layout_editor_absoluteX="214dp"
+        tools:layout_editor_absoluteY="427dp" />
+
+    <Button
+        android:id="@+id/buttoneud"
+        android:layout_width="196dp"
+        android:layout_height="65dp"
+        android:text="Konvertuj eure u dinare"
+        android:textColor="#3CE91E"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="497dp" />
+
+    <Button
+        android:id="@+id/buttondue"
+        android:layout_width="196dp"
+        android:layout_height="65dp"
+        android:text="Konvertuj dolare u dinare"
+        android:textColor="#E91E1E"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="497dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="169dp"
+        android:layout_height="36dp"
+        android:text="Iznos u dinarima"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="588dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="163dp"
+        android:layout_height="38dp"
+        android:text="Iznos u dinarima"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="588dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
